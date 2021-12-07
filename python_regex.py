@@ -32,11 +32,18 @@ def python_regex():
         print("Yes, there is at least one match!")
     else:
         print("No match")
-
+    # Searches for the first match and returns a matched object
     search_pattern = re.search("hotel", search_string)
+    print(search_pattern.span())
     print(search_pattern.start())
+    print(search_pattern.end())
+    print(search_pattern.group())
+    print(search_pattern.string)
     search_itr = re.finditer("hotel", search_string)
-    print(search_itr)
+    print(search_itr)  # return an iterator Matched object in the printed memory location
+    for sh_st in search_itr:
+        print(sh_st.start())
+        print(sh_st.end())
     # Split the string at every white-space character:
     search_split = re.split(r"\s", search_string)
     print(search_split)
