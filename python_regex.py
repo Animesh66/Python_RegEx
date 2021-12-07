@@ -44,8 +44,8 @@ def python_regex():
     for sh_st in search_itr:
         print(sh_st.start())
         print(sh_st.end())
-    # Split the string at every white-space character:
-    search_split = re.split(r"\s", search_string)
+    # Split the string at first two white-space character:
+    search_split = re.split(r"\s", search_string, 2)
     print(search_split)
     # Replace first 2 white-spaces characters with the digit "9"
     search_sub = re.sub(r"\s", "9", search_string, 2)
