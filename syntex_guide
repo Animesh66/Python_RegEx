@@ -50,3 +50,12 @@
 # .span() returns a tuple containing the start-, and end positions of the match.
 # .string returns the string passed into the function
 # .group() returns the part of the string where there was a match
+
+# re.compile(pattern, flags=0)
+# Compile a regular expression pattern into a regular expression object, which can be used for matching using its match(), search() and other methods, described below.
+# The expression’s behaviour can be modified by specifying a flags value. Values can be any of the following variables, combined using bitwise OR (the | operator).
+# The sequence
+# prog = re.compile(pattern)
+# result = prog.match(string)
+# is equivalent to
+# result = re.match(pattern, string)

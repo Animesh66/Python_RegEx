@@ -45,6 +45,7 @@ def python_regex():
     for sh_st in search_itr:
         print(sh_st.start())
         print(sh_st.end())
+        print(sh_st.span())
     # Split the string at first two white-space character:
     search_split = re.split(r"\s", search_string, 2)
     print(search_split)
