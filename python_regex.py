@@ -1,7 +1,7 @@
 import re
 
 
-search_string = "I am at the Taj hotel"
+search_string = "I am at the Taj hotel. Taj hotel is a very good hotel."
 
 
 def python_regex():
@@ -34,5 +34,12 @@ def python_regex():
     else:
         print("No match")
 
+    search_pattern = re.search("hotel", search_string)
+    print(search_pattern.start())
+    search_itr = re.finditer("hotel", search_string)
+    print(search_itr)
+    # Split the string at every white-space character:
+    search_split = re.split(r"\s", search_string)
+    print(search_split)
 
 python_regex()
