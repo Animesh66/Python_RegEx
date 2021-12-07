@@ -1,6 +1,5 @@
 import re
 
-
 search_string = "I am at the Taj hotel. Taj hotel is a very good hotel."
 
 
@@ -41,5 +40,9 @@ def python_regex():
     # Split the string at every white-space character:
     search_split = re.split(r"\s", search_string)
     print(search_split)
+    # Replace first 2 white-spaces characters with the digit "9"
+    search_sub = re.sub(r"\s", "9", search_string, 2)
+    print(search_sub)
+
 
 python_regex()
