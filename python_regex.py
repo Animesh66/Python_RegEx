@@ -32,6 +32,7 @@ def python_regex():
         print("Yes, there is at least one match!")
     else:
         print("No match")
+
     # Searches for the first match and returns a matched object
     search_pattern = re.search("hotel", search_string)
     print(search_pattern.span())
